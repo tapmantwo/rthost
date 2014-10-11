@@ -1,0 +1,302 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+	font-family: Monaco, monospace;
+	font-size: 1em;
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+.header
+{
+	background: #333;
+	color: #FBFBFB;
+	width: 100%;
+	float:left;
+}
+
+.footer
+{
+	background: #333;
+	color: #FBFBFB;
+	width: 100%;
+	text-align: center;
+	float:left;
+}
+
+.header h1
+{
+	margin: 3px;
+	padding: 0px 10px;
+	float:left;
+	text-align: center;
+}
+
+.header h1 img
+{
+	margin: 0px 2px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.header h1 a 
+{
+	padding: 0px 0px;
+	text-decoration: none;
+	/* pinky #FFABFF */
+	color: #FFFFEE;
+	height: 100%;
+	display:inline-block;
+	margin: 0px 5px;
+}
+
+.header .menu
+{
+	clear: both;
+	width: 100%;
+	float:right;
+	background-color: #222;
+	font-size: 150%;
+}
+
+.header .menu ul
+{	
+	float:right;
+	list-style:none;	
+}
+
+.header .menu ul li
+{
+	float:left;
+	padding-left: 10px;
+}
+
+.header .menu ul li:before
+{
+	content: "|";
+}
+
+.header .menu ul li:last-child:after
+{
+	content: "|";
+}
+
+.header .menu ul li a
+{
+	text-decoration: none;
+	color: #FF8303;	
+}
+
+.header .menu ul li a:hover
+{
+	cursor:pointer;
+	color: #FF9D1D;	
+	text-decoration: underline;
+}
+
+.header .menu ul li:last-child
+{
+	margin-right: 3px;
+}
+
+.content section
+{
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+
+.content section p {
+  font-size: 100%;
+  line-height: 150%;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.content section h2
+{
+	font-size: 180%;
+}
+
+.content section, .content section:before {
+  background: 50% 50% / cover;  
+}
+
+.content section:nth-child(2n) div.text {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.content section:nth-child(2n+1) div.text {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.content section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.content section div.text
+{
+font-size: 125%;
+  position: relative;
+  width: 75%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,240,240, 1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img.tom
+{
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+
+.content section:last-child
+{
+	background: #222;
+}
+
+div.score p
+{
+ 	color: #EEE;
+}
+
+div.score h2
+{
+	color: #FFABFF;
+	padding: 0px 5px;
+}
+
+div.score > h2:before,
+div.score > h2:after
+{
+	width: 14px;
+	height: 14px;
+	content: url("./assets/images/cherry.png");
+}
+
+div.score > h2:before
+{
+	margin-right: 5px;
+}
+
+div.score > h2:after
+{
+	margin-left: 5px;
+}
+
+div.score em
+{
+	color: #FFF;
+	font-size: 125%;
+}
+
+.content ol.devices {
+    list-style:none;
+    margin: 10px 0px;
+}
+
+.content ol.devices > li {
+    clear:both;
+ }
+
+.content ol.devices > li h3 {
+    text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+ }
+
+.content ol.devices ol.review {
+    list-style:none;
+}
+
+.content ol.devices ol.review li {
+    width: 25%;
+    max-width:25%;
+    float:left;
+    padding: 5px;
+    height: 325px;
+    max-height: 325px;
+    overflow:hidden;
+}
+
+.content ol.devices ol.review span {
+    height: 30px;
+    line-height: 30px;
+    background-color:rgba(240,240,240, 0.8);
+    width: 100%;
+        display:block;
+        text-align: center;
+        vertical-align: middle;
+        padding:0px;
+        position:relative;
+        top: -32px;
+}
+
+.content ol.devices ol.review span:hover {
+    background-color:rgba(240,240,240, 1);
+}
+
+.content ol.devices ol.review li img {
+    width:100%;
+    height:100%;
+}
+
+.content.reviews {
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.content.reviews h2 {
+    margin: 10px 0px;
+}
+
+@media (max-width: 640px) {
+    .content ol.devices ol.review li {
+        width: 100%;
+        max-width:100%;
+        float:left;
+    }
+}
+
+@media (min-width:614px) and (max-width: 1024px) {
+    .content ol.devices ol.review li {
+        width: 50%;
+        max-width:50%;
+        float:left;
+    }
+}
