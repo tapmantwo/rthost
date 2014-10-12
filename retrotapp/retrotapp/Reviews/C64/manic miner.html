@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,64 +7,59 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Retrotapp | Retro Video Games, Reviews and Information</title>
+    <title>Retrotapp | Manic Miner Review</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/Styles/reset.css">
     <link rel="stylesheet" href="/Styles/main.css">
 
     <style>
     	.content section:first-child:before {
-  			background-image: url("images/manic-miner/title-screen.png");
+  			background-image: url("/images/manic-miner/title-screen.png");
   			transform: translateZ(-1px) scale(2);
   			z-index:-1;
 		}
 
 		.content section:nth-child(2):before {
-  			background-image: url("images/manic-miner/central-cavern.png");
-  			background-attachment: fixed;
+  			background-image: url("/images/manic-miner/central-cavern.png");
+  			transform: translateZ(-1px) scale(2);
+  			z-index:-2;
 		}
 
 		.content section:nth-child(3):before {
-  			background-image: url("images/manic-miner/processing-plant-hires.png");
-  			background-attachment: fixed;
+  			background-image: url("/images/manic-miner/processing-plant-hires.png");
+  			transform: translateZ(-1px) scale(2);
+  			z-index:-3;
 		}		
 
 		.content section:nth-child(4):before {
-  			background-image: url("images/manic-miner/the-cold-room.png");
-  			background-attachment: fixed;
+  			background-image: url("/images/manic-miner/the-cold-room.png");
+  			transform: translateZ(-1px) scale(2);
+  			z-index:-4;
 		}
 
 		.content section:nth-child(5):before {
-  			background-image: url("images/manic-miner/eugenes-lair-hires.png");
-  			background-attachment: fixed;
+  			background-image: url("/images/manic-miner/eugenes-lair-hires.png");
+  			transform: translateZ(-1px) scale(2);
+  			z-index:-5;
 		}
 
 		.content section:nth-child(6):before {
-  			background-image: url("images/manic-miner/abandoned-uranium-works.png");
-  			background-attachment: fixed;
+  			background-image: url("/images/manic-miner/abandoned-uranium-works.png");
+  			transform: translateZ(-1px) scale(2);
+  			z-index:-6;
 		}
     </style>
   </head>
 
   <body>
 
-    <!-- Static navbar -->
-    <div class="header">      
-      <h1>
-        <img src="./Styles/images/pac.png"><a href="/home">RETROTAPP</a><img src="./Styles/images/inky.png"><img src="./Styles/images/blinky.png"><img src="./Styles/images/pinky.png"><img src="./Styles/images/clyde.png">
-      </h1>
-      <div class="menu">
-        <ul>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Our Collection</a></li>
-          <li><a href="./">About</a></li>
-        </ul>
-      </div>
-    </div>
+    <div data-ng-include="'/Templates/header.html'"></div>
 
     <div class="content">
     	<section>
     		<div class="text">
+                <img src="/images/manic-miner/title-screen.png" />
     			<h2>Manic Miner</h2>
     			<h3>C64, Cassette</h3>
     			<h4>Released 1983</h4>
@@ -72,32 +67,36 @@
     	</section>
     	<section>
     		<div class="text">
+                <img src="/images/manic-miner/central-cavern.png" />
     			<p>Miner Willy has stumbled upon an ancient mine full of valuable metals and minerals, that were mined a lost civilisation far superior to our own.   The mines are still full of precious materials, and Willy wants to cash in on it.</p>
     			<p>However, the mines are patrolled by robots, still busy working the mines, who will protect their valuables against any would be intruder.</p>
     		</div>
     	</section>    	
     	<section>
     		<div class="text">
+                <img src="/images/manic-miner/processing-plant-hires.png" />
     			<p>The game is a static screen platformer, with the aim on each screen being to collect the flashing keys in the room whilst avoiding the robots, poisonous plants, disolving platforms and other such hazards within the shaft.  Once all keys are collected, you must make your way to a portal which takes you to the next screen.  To make it harder, you have a time limit (represented as your oxygen level), though this seems reasonably generous for most stages.</p>
     			<p>Willy can only walk and jump, so gameplay is effectively a cross between timing your moves and solving the best routes through the screens.  As well as timing the moves correctly, much of the movement has to be pixel perfect, resulting in a pretty high difficulty level - the first level took me well in excess of ten goes to get through.  The subsqeuent levels vary in difficulty - it doesn't necessarily get harder as your progress through.  I managed to fly through the next few levels before being slowed down by Eugene, an egg-like robot (Dizzy anyone?) who moves up and down and generally likes to get in the way.  Other bizarre enemies that appear during the game are ill tempered toilets, pac-man clones, telephones and ewoks.</p>
     		</div>
     	</section>    	
     	<section>
     		<div class="text">
+                <img src="/images/manic-miner/the-cold-room.png" />
 	    		<p>The game was ported to the C64 by Chris Lancaster, and looks and feels very much like Matthew Smith's original Spectrum version.  Whilst relatively simple, the graphics have a distinct charm to them, enhanced by the psychadelic palette, and wonderfully well animated.  The sound effects are not the greatest - the title screen's rendition of "The Blue Danube" sounds out of tune at times (and in an awful tone), and the few bars of "Hall of the Mountain King" that play during the levels quickly becomes tedious.  The sound effects (upon death, or in particular when jumping) are disapointing given how good they could have been given the hardware.</p>
 	    		<p>That aside, the game is still fantastic fun to play.  It can be exhilarating, puzzling and frustrating, all balanced perfectly to make the game addictive and entertaining.  Despite the relatively simple mechanic (walk left, walk right, jump), the levels are interesting and varied, each offering a different challenge and new foes to find your way past.<p>
     		</div>
     	</section>    	
     	<section>
     		<div class="text">
+                <img src="/images/manic-miner/eugenes-lair-hires.png" />
     			<p>If you played video games in the 80s, there's a pretty good chance you will have played Manic Miner, or something influenced by Manic Miner, regardless of which platform you played on.  For me, it was the C64, and I only have very vague memories of Manic Miner as a child - predominantly that it was incredibly difficult, and compared to the other games I had at my disposal, the graphics and sound were terrible.  To be fair, when it was released (1983) I would have been 5 years old, and I wouldn't have played it for a few years later, when my parents bought me my C64 for xmas in 1987, by which time the graphics and sounds within games had risen to another level.  Despite my recollections, most other people speak of it with such reverance that I was very keen for this to be the first retro game I revisted, and more interestingly, the first retro game that I introduced my 6 year old son to.  And I am so pleased I did.</p>
     		</div>
     	</section>
     	<section>
     		<div class="text">
+                <img src="/images/manic-miner/tom.png" />
 				<h2>Tom says...</h2>
 				<p>
-				<img class="tom" src="Styles/images/tom.jpg">
               	It is very tricky on the 1st level and the 6th level but very fun. I think the jump noises can be a bit better.</p>    			
     		</div>
     	</section>
@@ -111,8 +110,6 @@
     		</div>
     	</section>
     </div>
-	  <div class="footer">
-	      <p class="text-muted">&copy; 2013 Retrotapp.</p>
-	  </div>
+    <div data-ng-include="'/Templates/footer.html'"></div>
   </body>
 </html>

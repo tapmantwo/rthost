@@ -16,40 +16,27 @@
     <link rel="stylesheet" href="/Styles/main.css">
 </head>
 
-<body data-ng-controller="reviewController">
-
-    <!-- Static navbar -->
-    <div class="header">
-        <h1>
-            <img src="./Styles/images/pac.png"><a href="/home">RETROTAPP</a><img src="./Styles/images/inky.png"><img src="./Styles/images/blinky.png"><img src="./Styles/images/pinky.png"><img src="./Styles/images/clyde.png">
-        </h1>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Our Collection</a></li>
-                <li><a href="./">About</a></li>
-            </ul>
+    <body data-ng-controller="reviewController">
+        <div data-ng-include="'/Templates/header.html'"></div>
+        <div class="content reviews">
+            <h2>Reviews</h2>
+            <p>The whole idea of this website is that Tom & I (plus maybe Ellie & Kate too) get to play a ton of retro games, and write up our thoughts on them.  Here you can access all of the reviews we have written to date.</p>
+            <ol class="retro devices">
+                <li data-ng-repeat="category in reviews.folders">
+                    <h3>{{category.name}}</h3>
+                    <img data-ng-src="{{category.thumbnailUrl}}"/>
+                    <ol class="retro review">
+                        <li data-ng-repeat="item in category.items">
+                            <a data-ng-href="{{item.url}}">
+                                <img data-ng-src="{{item.thumbnailUrl}}" />
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
         </div>
-    </div>
-
-    <div class="content reviews">
-        <h2>Reviews</h2>
-        <p>The whole idea of this website is that Tom & I (plus maybe Ellie & Kate too) get to play a ton of retro games, and write up our thoughts on them.  Here you can access all of the reviews we have written to date.</p>
-        <ol class="retro devices">
-            <li data-ng-repeat="category in reviews.folders">
-                <h3>{{category.name}}</h3>
-                <img data-ng-src="{{category.thumbnailUrl}}"/>
-                <ol class="retro review">
-                    <li data-ng-repeat="item in category.items">
-                        <a data-ng-href="{{item.url}}">
-                            <img data-ng-src="{{item.thumbnailUrl}}" />
-                            <span>{{item.name}}</span>
-                        </a>
-                    </li>
-                </ol>
-            </li>
-        </ol>
-    </div>
-</body>
+        <div data-ng-include="'/Templates/footer.html'"></div>
+    </body>
 </html>
 
