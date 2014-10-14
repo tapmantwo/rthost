@@ -155,7 +155,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reviews.html" />
+    <Content Include="index.html" />
+    <Content Include="reviews.html" />
+    <Content Include="Scripts\home.js" />
     <Content Include="Scripts\reviews.js" />
     <Content Include="Static\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Static\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

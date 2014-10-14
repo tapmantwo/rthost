@@ -1,4 +1,6 @@
-﻿namespace retrotapp.Models
+﻿using System;
+
+namespace retrotapp.Models
 {
     public class ContentItem
     {
@@ -8,6 +10,6 @@
 
         public string ThumbnailUrl { get; set; }
 
-        public string LastModifiedDate { get; set; }
+        public DateTime LastModifiedDate { get; set; }
     }
 }

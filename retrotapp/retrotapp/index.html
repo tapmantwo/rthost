@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="home">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Retrotapp | Reviews</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-resource.js"></script>
+    <script src="Scripts/home.js"></script>
+
+    <link rel="stylesheet" href="/Styles/reset.css">
+    <link rel="stylesheet" href="/Styles/main.css">
+</head>
+
+    <body data-ng-controller="homeController">
+        <div data-ng-include="'/Templates/header.html'"></div>
+        
+        <div class="content home">
+            <h2>Welcome to Retrotapp</h2>
+            <p>
+                Welcome to our site.  We're basically <a href="about.html">two geeky guys</a> (one a little older and a little geekier than the other), and we love to play games.  Here you'll find a reviews for each of the games we've played, across awesome devices such as the mighty <em>Commodore 64</em>, <em>Atari 2600</em>, <em>Sega Master System</em>, <em>Sega Mega Drive</em>, <em>Super Nintendo</em>, <em>Nintendo Gameboy</em>, <em>Sega Dreamcast</em>, <em>Sony Playstation</em> and <em>Sony Playstation II</em>.
+                We also plays games on our <em>Nintendo Wii</em>, <em>XBOX 360</em>, <em>Nintendo 3DS</em> and <em>PC</em>, so if we love the games there, we might review those too.
+                You can find us on <a href="http://twitter.com/retrotapp">twitter</a> (@retrotapp).  Let us know what you think :).
+            </p>
+        </div>
+        <div class="content reviews">
+            <h2>Recent Reviews</h2>
+            <ol class="retro review">
+                <li data-ng-repeat="item in recentItems">
+                    <div>
+                        <a data-ng-href="{{item.url}}">
+                            <img data-ng-src="{{item.thumbnailUrl}}" />
+                            <span>{{item.name}}</span>
+                        </a>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div data-ng-include="'/Templates/footer.html'"></div>
+    </body>
+</html>
+
