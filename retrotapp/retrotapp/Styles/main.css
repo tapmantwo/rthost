@@ -6,13 +6,13 @@ html {
 body {
 	font-family: Monaco, monospace;
 	font-size: 1em;
-  margin:0;
-  padding:0;
+    margin:0;
+    padding:0;
 	perspective: 1px;
 	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: rgba(240,240,240, 1);
 }
 
@@ -185,7 +185,7 @@ img.tom
 	margin-bottom: 2px;
 }
 
-.content section:last-child
+.content.review section:last-child
 {
 	background: #222;
 }
@@ -245,8 +245,8 @@ div.score em
 }
 
 .content ol.devices ol.review li {
-    width: 25%;
-    max-width:25%;
+    width: 33.3333%;
+    max-width:33.3333%;
     padding: 5px;
     height: 325px;
     max-height: 325px;
@@ -289,28 +289,16 @@ div.score em
     height:100%;
 }
 
-.content.reviews,
-.content.home {
-    width:95%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.content.home h2,
-.content.reviews h2 {
-    margin: 10px 0px;
-}
-
-.content section div.text img:nth-of-type(1) {
+.content.review section div.text img:nth-of-type(1) {
     width: 50%;
 }
 
-.content section:nth-child(2n) div.text img:nth-of-type(1) {
+.content.review section:nth-child(2n) div.text img:nth-of-type(1) {
     float:right;
     margin-left: 10px;
 }
 
-.content section:nth-child(2n+1) div.text img:nth-of-type(1) {
+.content.review section:nth-child(2n+1) div.text img:nth-of-type(1) {
     float:left;
     margin-right: 10px;
 }
