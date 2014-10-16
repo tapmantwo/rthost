@@ -303,6 +303,11 @@ div.score em
     margin-right: 10px;
 }
 
+.content.about section div.text img {
+    width: 50%;
+    float: left;
+}
+
 
 @media (max-width: 640px) {
     .content ol.devices ol.review li {

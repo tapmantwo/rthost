@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png"/>
+
+    <title>Retrotapp | Reviews</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-resource.js"></script>
+    <script src="Scripts/home.js"></script>
+
+    <link rel="stylesheet" href="/Styles/reset.css"/>
+    <link rel="stylesheet" href="/Styles/main.css"/>
+    
+    <style>
+        body {
+            background-image: url("/Styles/images/c64home.png");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .home section {
+            padding: 10vh 5%;
+        }
+
+        .home section div.text {
+                        background-color: rgba(240,240,240, 0.95);
+        }
+    </style>
+</head>
+
+    <body>
+        <div data-ng-include="'/Templates/header.html'"></div>
+
+        <div class="content home">
+            <section>
+                <div class="text">
+                    <h2>About Us</h2>
+                    <p>
+                        Richard set this up as a means to give his son Thomas an appreciation of the evolution of video games - how things compared to the games of today. He was interested to see how he reacted to simpler graphics, sound and long loading times - all of the things he happily suffered today.<br/>
+                        The intent is not a simple "Play loads of games" thing, instead an examiniation of the games, what was good about them and what was bad about them.  Then through discussion and lots of fun, they can write up a review, which will also help Thomas develop some web skills.<br/>
+                        Of course, it's not all educational - playing these games is (generally) great fun, and satisfying Richard's need to relive his youth.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="text">
+                    <img src="/images/richard.png" />
+                    <h2>Bio: Richard</h2>
+                    <p>
+                        I grew up in the 80s, with a <em>C64</em> being my first 'real' games machine.  I loved playing platformers, beat 'em ups and football sims, and would also enjoy typing in games listings from books and magazines.<br/>
+                        I progressed onto the <em>Amiga</em>, <em>SNES</em>, and then onto <em>PC</em> and <em>Playstation</em>, and I now play contempory games on <em>XBOX 360</em> or my PC.<br/>
+                        My all time favourite game would have to be the <em>Football Manager</em> series, closely followed by <em>Super Mario World</em>, <em>Street Fighter II</em> and <em>Final Fight</em>.<br/>                                               <
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="text">
+                    <img src="/images/thomas.png" />
+                    <h2>Bio: Thomas</h2>
+                    <p>
+                        I love playing video games, my favourites being <em>Minecraft</em> and <em>Fifa</em>.  I do like all types of games though, especially puzzle games.<br/>
+                        My favourite thing about playing retro games is...
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div data-ng-include="'/Templates/footer.html'"></div>
+    </body>
+</html>
+
