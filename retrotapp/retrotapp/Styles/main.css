@@ -8,8 +8,6 @@ body {
 	font-size: 1em;
     margin:0;
     padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -33,7 +31,11 @@ h3 {
 	background: #333;
 	color: #FBFBFB;
 	width: 100%;
-	float:left;
+	float: left;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    z-index:10000;
 }
 
 .footer
@@ -127,8 +129,9 @@ h3 {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-  transform-style: inherit;
+  /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);*/
+  z-index:0;
+  /*transform-style: inherit;*/
 }
 
 .content section p {
@@ -168,11 +171,11 @@ h3 {
 
 .content section div.text
 {
-font-size: 125%;
+  font-size: 125%;
   position: relative;
   width: 90%;
   padding: 5%;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   background: rgba(240,240,240, 1);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
   overflow:hidden;
