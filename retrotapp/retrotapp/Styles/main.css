@@ -293,7 +293,8 @@ div.score em
 }
 
 .content.review section div.text img:nth-of-type(1) {
-    width: 50%;
+    width: 100%;
+    display: block;
 }
 
 .content.review section:nth-child(2n) div.text img:nth-of-type(1) {
